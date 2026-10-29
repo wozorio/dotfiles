@@ -175,4 +175,6 @@
   "github.copilot.advanced": {
     "authProvider": "github-enterprise",
   },
+  "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
+  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.podmancompose",
 }
