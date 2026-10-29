@@ -48,3 +48,25 @@ stow -D --verbose=2 --target=$HOME */
 ```
 
 💡 **Pro Tip**: If a file already exists in your target directory (e.g., a default `~/.zshrc` created by your OS), Stow will refuse to overwrite it. You must backup and delete the existing file before running the Stow command.
+
+---
+
+## 🍺 Homebrew Bundle (`Brewfile`)
+
+You can track and restore all your installed Homebrew packages, casks (macOS GUI apps), Mac App Store apps, and VS Code extensions using a `Brewfile`.
+
+### 1. Generate or Update the `Brewfile`
+
+To dump a list of all currently installed apps and packages into a `Brewfile` in the current directory (overwriting any existing `Brewfile` and adding helpful descriptions), run:
+
+```zsh
+brew bundle dump --force
+```
+
+### 2. Install Apps from the `Brewfile`
+
+On a new machine (or to sync missing packages), install everything listed in your `Brewfile`:
+
+```zsh
+brew bundle install
+```
