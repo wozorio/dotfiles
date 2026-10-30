@@ -53,14 +53,12 @@ stow -D --verbose=2 --target=$HOME */
 
 ## 🍺 Homebrew Bundle (`Brewfile`)
 
-You can track and restore all your installed Homebrew packages, casks (macOS GUI apps), Mac App Store apps, and VS Code extensions using a `Brewfile`.
-
 ### 1. Generate or Update the `Brewfile`
 
-To dump a list of all currently installed apps and packages into a `Brewfile` in the current directory (overwriting any existing `Brewfile` and adding helpful descriptions), run:
+To dump a list of all currently installed apps and packages into a `Brewfile` in the current directory (overwriting any existing `Brewfile`), run:
 
 ```zsh
-brew bundle dump --force
+brew bundle dump --no-describe --force
 ```
 
 ### 2. Install Apps from the `Brewfile`
