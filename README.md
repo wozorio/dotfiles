@@ -1,6 +1,6 @@
 # Dotfiles Management with GNU Stow
 
-This repository contains my personal dotfiles, managed and symlinked to the home directory using **GNU Stow**.
+Personal configuration files for bootstrapping and customizing my **macOS** environment, managed and symlinked to `$HOME` via **GNU Stow**.
 
 ## 🚀 Quick Start
 
@@ -53,18 +53,18 @@ stow -D --verbose=2 --target=$HOME */
 
 ## 🍺 Homebrew Bundle (`Brewfile`)
 
-### 1. Generate or Update the `Brewfile`
-
-To dump a list of all currently installed apps and packages into a `Brewfile` in the current directory (overwriting any existing `Brewfile`), run:
-
-```zsh
-brew bundle dump --no-describe --force
-```
-
-### 2. Install Apps from the `Brewfile`
+### 1. Install Apps from the `Brewfile`
 
 On a new machine (or to sync missing packages), install everything listed in your `Brewfile`:
 
 ```zsh
 brew bundle install
+```
+
+### 2. Generate or Update the `Brewfile`
+
+To dump a list of all currently installed apps and packages into a `Brewfile` in the current directory (overwriting any existing `Brewfile`), run:
+
+```zsh
+brew bundle dump --no-describe --force
 ```
