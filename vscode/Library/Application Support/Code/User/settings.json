@@ -1,5 +1,4 @@
 {
-  //"editor.fontFamily": "",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
@@ -23,6 +22,7 @@
     "yaml": false,
     "csharp": false,
   },
+  "chat.agent.sandbox.enabled": "on",
   // Editor
   "extensions.ignoreRecommendations": true,
   "editor.tabSize": 4,
@@ -39,9 +39,9 @@
   // Kubernetes
   "vs-kubernetes": {
     "vs-kubernetes.crd-code-completion": "disabled",
-    "vscode-kubernetes.helm-path": "/opt/homebrew/bin/kubectl",
-    "vscode-kubernetes.kubectl-path": ",/opt/homebrew/bin/helm",
   },
+  "vscode-kubernetes.kubectl-path": "/opt/homebrew/bin/kubectl",
+  "vscode-kubernetes.helm-path": "/opt/homebrew/bin/helm",
   // Files
   "files.encoding": "utf8",
   "files.eol": "\n",
