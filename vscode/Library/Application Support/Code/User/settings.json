@@ -8,6 +8,7 @@
   "workbench.startupEditor": "none",
   "explorer.compactFolders": false,
   "remote.autoForwardPortsSource": "hybrid",
+  "update.mode": "manual",
   // Privacy
   "redhat.telemetry.enabled": false,
   // Git
