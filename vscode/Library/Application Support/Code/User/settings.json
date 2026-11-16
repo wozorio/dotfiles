@@ -1,6 +1,9 @@
 {
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
+  "editor.mouseWheelZoom": true,
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.fontSize": 16,
   "editor.minimap.enabled": false,
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "catppuccin-perfect-mocha",
@@ -9,6 +12,7 @@
   "explorer.compactFolders": false,
   "remote.autoForwardPortsSource": "hybrid",
   "update.mode": "manual",
+  "dev.containers.dockerPath": "podman",
   // Privacy
   "redhat.telemetry.enabled": false,
   // Git
@@ -91,14 +95,16 @@
     ],
   },
   // Python
-  "python.analysis.typeCheckingMode": "standard",
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit",
     },
   },
+  "python.languageServer": "Default",
+  "python.analysis.typeCheckingMode": "standard",
   "python-envs.alwaysUseUv": true,
+  "ty.experimental.useUv": "on",
   // JSON
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -116,6 +122,7 @@
   "[shellscript]": {
     "editor.defaultFormatter": "mkhl.shfmt",
   },
+  "shfmt.executableArgs": ["-i", "4"],
   // Terraform
   "terraform.validation.enableEnhancedValidation": false,
   "[terraform]": {
