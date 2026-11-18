@@ -29,9 +29,9 @@ RPROMPT='$(kube_ps1)'
 export PATH="$PATH:$HOME/.dotnet/tools"
 export DOTNET_ROOT="$HOMEBREW_PREFIX/opt/dotnet/libexec"
 
-devrig() {
+prime() {
     local workspace_folder="$HOME/repos"
-    local config="$workspace_folder/.devcontainer/DevRig/devcontainer.json"
+    local config="$workspace_folder/.devcontainer/prime/devcontainer.json"
 
     podman machine start
 

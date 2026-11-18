@@ -13,14 +13,11 @@
   "explorer.compactFolders": false,
   "chat.viewSessions.orientation": "stacked",
 
-  // Updates and privacy
-  "update.mode": "manual",
-  "redhat.telemetry.enabled": false,
+  // Updates
+  "update.mode": "none",
 
   // Container provider
   "dev.containers.dockerPath": "podman",
-  "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
-  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.podmancompose",
 
   // GitHub Copilot
   "chat.agent.sandbox.enabled": "off",
