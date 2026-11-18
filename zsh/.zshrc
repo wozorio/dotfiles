@@ -28,3 +28,18 @@ RPROMPT='$(kube_ps1)'
 # Dotnet-related ENV variable
 export PATH="$PATH:$HOME/.dotnet/tools"
 export DOTNET_ROOT="$HOMEBREW_PREFIX/opt/dotnet/libexec"
+
+devrig() {
+    local workspace_folder="$HOME/repos"
+    local config="$workspace_folder/.devcontainer/DevRig/devcontainer.json"
+
+    podman machine start
+
+    devcontainer up --docker-path podman \
+        --workspace-folder $workspace_folder \
+        --config $config
+    devcontainer exec --docker-path podman \
+        --workspace-folder $workspace_folder \
+        --config $config \
+        zsh
+}

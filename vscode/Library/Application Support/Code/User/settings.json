@@ -13,6 +13,8 @@
   "remote.autoForwardPortsSource": "hybrid",
   "update.mode": "manual",
   "dev.containers.dockerPath": "podman",
+  "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
+  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.podmancompose",
   // Privacy
   "redhat.telemetry.enabled": false,
   // Git
@@ -183,6 +185,4 @@
   "github.copilot.advanced": {
     "authProvider": "github-enterprise",
   },
-  "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
-  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.podmancompose",
 }
