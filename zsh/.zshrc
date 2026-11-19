@@ -25,13 +25,9 @@ source $ZSH/oh-my-zsh.sh
 # Display kube-ps1 plugin on the right side of the terminal
 RPROMPT='$(kube_ps1)'
 
-# Dotnet-related ENV variable
-export PATH="$PATH:$HOME/.dotnet/tools"
-export DOTNET_ROOT="$HOMEBREW_PREFIX/opt/dotnet/libexec"
-
-prime() {
+bubble() {
     local workspace_folder="$HOME/repos"
-    local config="$workspace_folder/.devcontainer/prime/devcontainer.json"
+    local config="$workspace_folder/.devcontainer/bubble/devcontainer.json"
 
     podman machine start
 
